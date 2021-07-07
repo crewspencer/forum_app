@@ -32,7 +32,7 @@ var app = new Vue ( {
         new_post_body:"",
         new_post_author:"",
 
-        server_url:"http://forum2021.codeschool.cloud"
+        server_url:"https://forum-app-2021.herokuapp.com/"
     }, 
     created:function(){
         this.getThreads();
