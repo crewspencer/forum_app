@@ -11,7 +11,7 @@
   <div id="app" v-cloak>
     <v-app>
       <v-main>
-        <v-app-bar color="light-blue lighten-3" fixed app>
+        <v-app-bar color="red darken-1" fixed app>
           <v-app-bar-nav-icon @click="drawer =!drawer"></v-app-bar-nav-icon>
           <v-toolbar-title>Forum App</v-toolbar-title>
           <v-spacer></v-spacer>
@@ -50,13 +50,14 @@
                   <div class="headline">{{ thread.name }}</div>
                   <div class="caption">By: {{ thread.author }}</div>
                   <span class="caption">{{ thread.description }}</span><br>
+                  <br>
                   <span class="body-2" text-xs-center>{{ thread.category }}</span>
                 </div>
                 <v-spacer></v-spacer>
                 <v-btn
                   v-on:click="deleteThread(thread._id)"
                   rounded
-                  color="primary"
+                  color="red lighten-1"
                   dark>
                 Delete 
                 </v-btn>
@@ -89,7 +90,7 @@
                 <v-btn
                   v-on:click="deletePost(post)"
                   rounded
-                  color="primary"
+                  color="red lighten-1"
                   dark>
                 Delete 
                 </v-btn>

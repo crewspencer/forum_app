@@ -1,3 +1,6 @@
 [v-cloak]{
     display: none;
 }
+.caption {
+    word-break: keep-all;
+}
